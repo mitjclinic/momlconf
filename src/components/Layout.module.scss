@@ -1,0 +1,28 @@
+@import "../styles/colors.scss";
+
+$sidebar-width: 40px;
+
+.sidebar {
+    color: $offblack;
+
+    height: 100vh;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 6px;
+    width: $sidebar-width;
+    position: fixed;
+    writing-mode: vertical-rl;
+
+    transform: rotateZ(180deg);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.shiftright {
+    margin-left: $sidebar-width;
+
+    padding: 10px;
+
+}
