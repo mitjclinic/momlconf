@@ -1,6 +1,8 @@
+@use "colors.scss" as colors;
 @import "fonts.scss";
 
 html, body {
+    background-color: colors.$offwhite;
     margin: 0;
     box-sizing: border-box;
 }
@@ -16,5 +18,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 p {
-    font-family: "Mundial Thin";
+    font-family: "Mundial thin";
+    font-size: 1.2rem;
+}
+
+a {
+    font-family: inherit;
+    color: colors.$blue;
 }

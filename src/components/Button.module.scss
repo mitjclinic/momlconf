@@ -1,0 +1,29 @@
+@use "../styles/colors.scss" as colors;
+
+.button {
+    display: inline-block;
+    color: colors.$blue;
+    border-bottom: 2px solid colors.$blue;
+    padding: 2px 4px;
+
+    cursor: pointer;
+    transition: all 0.1s;
+}
+
+.button:hover {
+    background-color: colors.$blue;
+    color: colors.$offwhite;
+
+    transition: all 0.1s;
+}
+
+.content {
+    font-size: 1.1rem;
+    display: flex;
+    align-items: baseline;
+
+    svg {
+        margin-left: 1em;
+        transform: translate(0, 3px);
+    }
+}

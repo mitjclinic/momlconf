@@ -18,10 +18,9 @@ const Layout = ({ children }) => {
     <>
       <Sidebar />
 
-      <div className={styles.shiftright}>
-        {children}
-        <Footer />
-      </div>
+      <div className={styles.content}>{children}</div>
+
+      <Footer />
     </>
   )
 }

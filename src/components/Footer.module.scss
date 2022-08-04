@@ -1,0 +1,62 @@
+@use "./Layout.module.scss" as layout;
+@use "../styles/colors.scss" as colors;
+
+.footer {
+    min-width: 720px;
+
+    background-color: colors.$offblack;
+    color: colors.$offwhite;
+    min-height: layout.$footer-min-height;
+    margin-left: layout.$sidebar-width;
+    display: flex;
+    align-items: center;
+
+    a {
+        color: colors.$offwhite;
+        font-family: "Mundial thin";
+        font-size: 0.8em;
+        padding: 4px 0;
+    }
+
+    p {
+        font-family: "Mundial thin";
+        font-size: 0.8em;
+    }
+
+    h1 {
+        font-size: 1.4rem;
+    }
+}
+
+.constrain {
+    max-width: 960px;
+    margin: 0 auto;
+    height: 100%;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+}
+
+.half {
+    flex-basis: 50%;
+}
+
+.contact {
+    height: 100%;
+    padding: 0 5%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contactLinks {
+    padding-top: 1em;
+    display: flex;
+    flex-direction: column;
+}
+
+.about {
+    flex-basis: 50%;
+}

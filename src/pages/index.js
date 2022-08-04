@@ -11,21 +11,31 @@ import * as styles from "../styles/index.module.scss"
 
 const Hero = () => {
   return (
-    <section>
-      <h1>Molecular ML Conference</h1>
-      <h2>October 21, 2022</h2>
-      <h2>Massachusetts Institute of Technology</h2>
+    <section className={styles.hero}>
+      <div className={styles.description}>
+        <h1>Molecular ML Conference</h1>
 
-      <p>
-        MoML is a new annual research conference organized in the name of
-        Octavian-Eugen Ganea who passed away this May.
-      </p>
+        <div>
+          <h2>October 21, 2022</h2>
+          <h2>Massachusetts Institute of Technology</h2>
+        </div>
+
+        <p>
+          MoML is a new annual research conference organized in the name of{" "}
+          <a href="https://people.csail.mit.edu/oct/">Octavian-Eugen Ganea</a>{" "}
+          who passed away this May.
+        </p>
+      </div>
+
+      <div className={styles.image}>
+        <StaticImage src="../images/GST.png" alt="A protein" />
+      </div>
     </section>
   )
 }
 
 const CallForPosters = () => (
-  <section>
+  <section className={styles.callForPosters}>
     <h1>Call for posters</h1>
     <p>
       The MoML Conference covers research from areas broadly related to machine
@@ -35,7 +45,8 @@ const CallForPosters = () => (
 
     <p>
       We invite you to submit your posters summarizing your research by{" "}
-      <i>[deadline TBD]</i>. We would be happy to discuss your posters with you!
+      <span>[deadline TBD]</span>. We would be happy to discuss your posters
+      with you!
     </p>
 
     <Button text={"Submit a poster abstract"} />
@@ -74,20 +85,19 @@ const OrganizingCommittee = () => (
 
 const IndexPage = () => (
   <Layout>
-    <Hero />
-    <CallForPosters />
-    <Speakers />
-    <Schedule />
-    <Sponsors />
-    <OrganizingCommittee />
+    <div className={styles.constrain}>
+      <div className={styles.global}>
+        <Hero />
+        <CallForPosters />
+        <Speakers />
+        <Schedule />
+        <Sponsors />
+        <OrganizingCommittee />
+      </div>
+    </div>
   </Layout>
 )
 
-/**
- * Head export to define metadata for the page
- *
- * See: https://www.gatsbyjs.com/docs/reference/built-in-components/gatsby-head/
- */
 export const Head = () => <Seo title="Home" />
 
 export default IndexPage

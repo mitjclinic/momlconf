@@ -1,1 +1,70 @@
+@use "colors.scss" as colors;
 @import "fonts.scss";
+
+.constrain {
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.global {
+    section {
+        margin-bottom: 1em;
+    }
+}
+
+.hero {
+    min-height: 30rem;
+    display: flex;
+    align-items: center;
+
+    h1 {
+        font-family: "Mundial DemiBold";
+        font-size: 3.2rem;
+        line-height: 1;
+        margin-bottom: 0.2em;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+        line-height: 1.2;
+    }
+
+    p {
+        font-size: 1.4rem;
+        line-height: 1;
+    }
+
+    a {
+        font-family: "Mundial";
+        color: colors.$blue;
+    }
+}
+
+.description {
+    height: 100%;
+    flex-basis: 50%;
+
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+}
+
+.image {
+    flex-basis: 50%;
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.callForPosters {
+    p {
+        line-height: 1;
+        width: 60%;
+    }
+
+    span {
+        line-height: 1;
+    }
+}

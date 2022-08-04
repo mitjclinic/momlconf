@@ -1,9 +1,13 @@
-@import "../styles/colors.scss";
+@use "../styles/colors.scss" as colors;
 
 $sidebar-width: 40px;
+$footer-min-height: 200px;
 
 .sidebar {
-    color: $offblack;
+    font-size: 0.8rem;
+
+    background-color: colors.$offblack;
+    color: colors.$offwhite;
 
     height: 100vh;
     padding-top: 10px;
@@ -20,9 +24,11 @@ $sidebar-width: 40px;
     justify-content: space-between;
 }
 
-.shiftright {
+.content {
     margin-left: $sidebar-width;
 
-    padding: 10px;
+    min-height: calc(100vh - $footer-min-height);
+    min-width: 720px;
 
+    padding: 20px;
 }
