@@ -36,7 +36,12 @@ const Hero = () => {
       </div>
 
       <div className={styles.image}>
-        <StaticImage src="../images/GST.png" alt="A protein" />
+        <StaticImage
+          src="../images/GST.png"
+          alt="A protein"
+          loading="eager"
+          placeholder="tracedSVG"
+        />
       </div>
     </section>
   )
