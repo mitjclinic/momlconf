@@ -30,7 +30,13 @@ const Hero = () => {
 
         <p>
           MoML is a new annual research conference organized in the name of{" "}
-          <a href="https://people.csail.mit.edu/oct/">Octavian-Eugen Ganea</a>{" "}
+          <a
+            href="https://people.csail.mit.edu/oct/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Octavian-Eugen Ganea
+          </a>{" "}
           who passed away this May.
         </p>
       </div>
@@ -83,7 +89,7 @@ const Schedule = () => (
 )
 
 const Sponsors = () => (
-  <section>
+  <section className={styles.sponsors}>
     <h1>Sponsors</h1>
     <p>
       If you are interested in sponsoring MoML, please contact us at{" "}
