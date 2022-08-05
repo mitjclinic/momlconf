@@ -1,5 +1,4 @@
 @use "colors.scss" as colors;
-@import url("https://use.typekit.net/bcw3lof.css");
 
 .constrain {
     max-width: 700px;
@@ -21,7 +20,7 @@ input, textarea {
     color: colors.$offblack;
     font-size: 1.1rem;
     padding: 0.6em 0.25em 0.4em 0.25em;
-    font-family: "Mundial thin";
+    font-weight: 200;
 
     margin-bottom: 1rem;
 }

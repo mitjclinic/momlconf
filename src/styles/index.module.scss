@@ -1,5 +1,4 @@
 @use "colors.scss" as colors;
-@import url("https://use.typekit.net/bcw3lof.css");
 
 .constrain {
     max-width: 960px;
@@ -22,7 +21,8 @@
     align-items: center;
 
     h1 {
-        font-family: "Mundial DemiBold";
+        font-family: mundial;
+        font-weight: 400;
         font-size: 3.2rem;
         line-height: 1;
         margin-bottom: 0.2em;
@@ -39,7 +39,7 @@
     }
 
     a {
-        font-family: "Mundial";
+        font-family: mundial;
         color: colors.$blue;
     }
 }
@@ -83,6 +83,6 @@
 
 .sponsors {
     a {
-        font-family: "Mundial";
+        font-family: mundial;
     }
 }

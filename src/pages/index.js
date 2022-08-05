@@ -176,6 +176,11 @@ const IndexPage = () => (
   </Layout>
 )
 
-export const Head = () => <Seo title="Home" />
+export const Head = () => (
+  <>
+    <link rel="stylesheet" href="https://use.typekit.net/bcw3lof.css"></link>
+    <Seo title="Home" />
+  </>
+)
 
 export default IndexPage
