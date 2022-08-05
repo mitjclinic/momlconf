@@ -1,5 +1,5 @@
 import * as React from "react"
-import { graphql, Link } from "gatsby"
+import { Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 
 import Button from "../components/Button"
@@ -57,7 +57,9 @@ const CallForPosters = () => (
       with you!
     </p>
 
-    <Button text={"Submit a poster abstract"} />
+    <Link to="/submitabstract">
+      <Button text={"Submit a poster abstract"} />
+    </Link>
   </section>
 )
 
@@ -95,12 +97,17 @@ const OrganizingCommittee = () => (
         name={"Felix Faltings"}
         title={"PhD student"}
         affiliation={"Massachusetts Institute of Technology"}
+        linkedin={"https://www.linkedin.com/in/felix-faltings-73b886127/"}
+        url={"https://www.linkedin.com/in/felix-faltings-73b886127/"}
       />
       <Organizer
         image={HannesStark}
         name={"Hannes Stark"}
         title={"PhD student"}
         affiliation={"Massachusetts Institute of Technology"}
+        twitter={"https://twitter.com/HannesStaerk"}
+        linkedin={"https://www.linkedin.com/in/hannes-stark/"}
+        url={"https://hannes-stark.com/"}
       />
     </div>
 
@@ -110,12 +117,16 @@ const OrganizingCommittee = () => (
         name={"Gabriele Corso"}
         title={"PhD student"}
         affiliation={"Massachusetts Institute of Technology"}
+        twitter={"https://twitter.com/GabriCorso"}
+        linkedin={"https://www.linkedin.com/in/gcorso/"}
+        url={"https://gcorso.github.io/"}
       />
       <Organizer
         image={ReginaBarzilay}
         name={"Regina Barzilay"}
         title={"Professor"}
         affiliation={"Massachusetts Institute of Technology"}
+        url={"https://www.regina.csail.mit.edu/"}
       />
     </div>
 
@@ -125,12 +136,15 @@ const OrganizingCommittee = () => (
         name={"Tommi Jaakkola"}
         title={"Professor"}
         affiliation={"Massachusetts Institute of Technology"}
+        url={"https://people.csail.mit.edu/tommi/"}
       />
       <Organizer
         image={CharlotteBunne}
         name={"Charlotte Bunne"}
         title={"PhD student"}
         affiliation={"ETH Zurich"}
+        twitter={"https://twitter.com/_bunnech"}
+        url={"http://bunne.ch/"}
       />
     </div>
   </section>

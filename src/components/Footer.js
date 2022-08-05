@@ -10,8 +10,20 @@ const Footer = () => {
           <div className={styles.contact}>
             <h1>Contact</h1>
             <div className={styles.contactLinks}>
-              <a href="#">Follow MoML on Twitter</a>
-              <a href="#">Follow MoML on LinkedIn</a>
+              <a
+                href="https://twitter.com/AIHealthMIT"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Follow MIT Jameel Clinic on Twitter
+              </a>
+              <a
+                href="https://www.linkedin.com/company/aihealthmit/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Follow MIT Jameel Clinic on LinkedIn
+              </a>
               <a href="mailto:momlconf@mit.edu">Email the organizers</a>
             </div>
           </div>

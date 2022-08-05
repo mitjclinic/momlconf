@@ -9,6 +9,7 @@
     img {
         border-radius: 50%;
         width: 106px;
+        cursor: pointer;
     }
 }
 
@@ -16,11 +17,11 @@
     padding-left: 1em;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
 
     h1 {
         font-size: 1.2rem;
-        margin: 0 !important;
+        margin-bottom: 0.5rem !important;
     }
 
     p {
@@ -30,5 +31,10 @@
 
     svg {
         margin-right: 0.5rem;
+        transform: scale(1.1);
+    }
+
+    svg:hover {
+        transform: scale(1.4);
     }
 }

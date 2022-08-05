@@ -3,9 +3,9 @@ import { FiArrowRight } from "react-icons/fi"
 
 import * as styles from "./Button.module.scss"
 
-const Button = ({ text }) => {
+const Button = ({ text, onClick }) => {
   return (
-    <div className={styles.button}>
+    <div className={styles.button} onClick={e => onClick && onClick(e)}>
       <div className={styles.content}>
         {text}
         <FiArrowRight />
