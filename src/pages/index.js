@@ -1,5 +1,5 @@
 import * as React from "react"
-import { Link } from "gatsby"
+import { graphql, Link } from "gatsby"
 import { StaticImage } from "gatsby-plugin-image"
 
 import Button from "../components/Button"
@@ -8,6 +8,14 @@ import Layout from "../components/Layout"
 
 import "../styles/globals.scss"
 import * as styles from "../styles/index.module.scss"
+import Organizer from "../components/Organizer"
+
+import FelixFaltings from "../images/felix-faltings.jpeg"
+import HannesStark from "../images/hannes-stark.jpeg"
+import GabrieleCorso from "../images/gabriele-corso.jpeg"
+import ReginaBarzilay from "../images/regina-barzilay.jpeg"
+import TommiJaakkola from "../images/tommi-jaakkola.png"
+import CharlotteBunne from "../images/charlotte-bunne.png"
 
 const Hero = () => {
   return (
@@ -78,8 +86,53 @@ const Sponsors = () => (
 )
 
 const OrganizingCommittee = () => (
-  <section>
+  <section className={styles.organizers}>
     <h1>Organizing committee</h1>
+
+    <div className={styles.row}>
+      <Organizer
+        image={FelixFaltings}
+        name={"Felix Faltings"}
+        title={"PhD student"}
+        affiliation={"Massachusetts Institute of Technology"}
+      />
+      <Organizer
+        image={HannesStark}
+        name={"Hannes Stark"}
+        title={"PhD student"}
+        affiliation={"Massachusetts Institute of Technology"}
+      />
+    </div>
+
+    <div className={styles.row}>
+      <Organizer
+        image={GabrieleCorso}
+        name={"Gabriele Corso"}
+        title={"PhD student"}
+        affiliation={"Massachusetts Institute of Technology"}
+      />
+      <Organizer
+        image={ReginaBarzilay}
+        name={"Regina Barzilay"}
+        title={"Professor"}
+        affiliation={"Massachusetts Institute of Technology"}
+      />
+    </div>
+
+    <div className={styles.row}>
+      <Organizer
+        image={TommiJaakkola}
+        name={"Tommi Jaakkola"}
+        title={"Professor"}
+        affiliation={"Massachusetts Institute of Technology"}
+      />
+      <Organizer
+        image={CharlotteBunne}
+        name={"Charlotte Bunne"}
+        title={"PhD student"}
+        affiliation={"ETH Zurich"}
+      />
+    </div>
   </section>
 )
 

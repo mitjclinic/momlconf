@@ -9,6 +9,10 @@
 .global {
     section {
         margin-bottom: 1em;
+
+        h1 {
+            margin-bottom: 1rem;
+        }
     }
 }
 
@@ -66,5 +70,13 @@
 
     span {
         line-height: 1;
+    }
+}
+
+.organizers {
+    .row {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 1rem;
     }
 }

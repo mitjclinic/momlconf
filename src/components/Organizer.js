@@ -1,23 +1,16 @@
-import { GatsbyImage, getImage } from "gatsby-plugin-image"
+import React from "react"
 import { FaLinkedin, FaTwitter } from "react-icons/fa"
 
-const Organizer = ({
-  imageData,
-  name,
-  title,
-  affiliation,
-  twitter,
-  linkedin,
-}) => {
-  const image = getImage(imageData)
+import * as styles from "./Organizer.module.scss"
 
+const Organizer = ({ image, name, title, affiliation, twitter, linkedin }) => {
   return (
-    <div>
-      <div>
-        <GatsbyImage image={image} alt={name} />
+    <div className={styles.organizer}>
+      <div className={styles.image}>
+        <img src={image} alt={name} />
       </div>
 
-      <div>
+      <div className={styles.info}>
         <h1>{name}</h1>
 
         <div>
