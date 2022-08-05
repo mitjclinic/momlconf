@@ -4,6 +4,7 @@ import Layout from "../components/Layout"
 import { useForm, ValidationError } from "@formspree/react"
 
 import * as styles from "../styles/submitabstract.module.scss"
+import { Script } from "gatsby"
 
 const AbstractForm = () => {
   const [state, handleSubmit] = useForm("xknewkpr")
@@ -32,10 +33,12 @@ const AbstractForm = () => {
         errors={state.errors}
       />
 
-      <div
-        className="g-recaptcha"
-        data-sitekey="6LcFL0shAAAAAMlWeBLEENRlpsly_6YSRrxjnJjM"
-      ></div>
+      <div className={styles.recaptcha}>
+        <div
+          className="g-recaptcha"
+          data-sitekey="6LekNEshAAAAABzNMMlMPFNcVMKj0IHMaaWu6uhB"
+        ></div>
+      </div>
 
       <button type="submit" disabled={state.submitting}>
         Submit
@@ -47,6 +50,8 @@ const AbstractForm = () => {
 const SubmitAbstractPage = () => {
   return (
     <Layout>
+      <Script src="https://www.google.com/recaptcha/api.js" async defer />
+
       <div className={styles.constrain}>
         <h1>Submit a poster abstract</h1>
 
