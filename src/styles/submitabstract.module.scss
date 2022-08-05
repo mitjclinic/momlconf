@@ -1,0 +1,55 @@
+@use "colors.scss" as colors;
+
+.constrain {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 1.25em;
+}
+
+input, textarea {
+    border: none;
+    background-color: rgb(231, 219, 191);
+    color: colors.$offblack;
+    font-size: 1.1rem;
+    padding: 0.6em 0.25em 0.4em 0.25em;
+    font-family: "Mundial thin";
+
+    margin-bottom: 1rem;
+}
+
+input:focus,textarea:focus{
+    outline: none;
+    border: none;
+    border-right: 4px solid colors.$offblack;
+    background-color: colors.$linen;
+
+    transition: all 0.1s;;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    height: 40px;
+    width: 250px;
+    margin: 0 auto;
+    font-size: 1rem;
+
+    background-color: colors.$offwhite;
+    color: colors.$offblack;
+    border: 3px solid colors.$offblack;
+}
+
+button:hover {
+    background-color: colors.$offblack;
+    color: colors.$offwhite;
+
+    transition: all 0.1s;
+}
